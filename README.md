@@ -1,7 +1,7 @@
 # BearChat 
 
 Application Android de messagerie similaire à WhatsApp/Telegram avec un cryptage de bout-en-bout par défaut,
-une sécurité plus pratique, des animations, une UI sous le thème ours 🐻 et bien plus encore✨.
+une sécurité plus pratique, des animations, une UI sous le thème "ours" 🐻 et bien plus encore✨.
 
 ### Statut du projet
 🚧 En développement actif
