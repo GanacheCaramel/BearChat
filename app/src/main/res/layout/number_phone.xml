@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="20dp"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:padding="5dp"
+		android:background="@drawable/input_background">
+		<Spinner
+			android:id="@+id/number_spinner_index"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			
+			android:background="@android:color/transparent"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginRight="5dp"
+			android:padding="5dp"
+			android:orientation="horizontal"
+			android:background="@android:color/transparent">
+			<EditText
+				android:id="@+id/number_usernum_index"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+237"
+				android:inputType="phone"
+				android:padding="16dp"
+				android:maxLength="4"
+				android:gravity="center"
+				android:background="@drawable/input_background"
+				android:textColor="@color/espresso"
+				android:textColorHint="@color/hint_color"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:padding="5dp"
+			android:orientation="horizontal"
+			android:background="@android:color/transparent">
+			<EditText
+				android:id="@+id/number_usernum"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:inputType="phone"
+				android:paddingStart="16dp"
+				android:paddingEnd="16dp"
+				android:background="@drawable/input_background"
+				android:textColor="@color/espresso"
+				android:textColorHint="@color/hint_color"/>
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

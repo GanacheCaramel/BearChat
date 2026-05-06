@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/verification_codeLay"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="32dp"
+	android:orientation="vertical"
+	android:visibility="gone">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/verification_codeMessage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/code_message"
+			android:textSize="16sp"
+			android:textColor="@color/cafe_noir"
+			android:layout_marginBottom="5dp"
+			android:letterSpacing="0.02"/>
+
+		<TextView
+			android:id="@+id/verification_codeNumber"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="some message"
+			android:textSize="16sp"
+			android:textColor="@color/cafe_noir"
+			android:textStyle="bold"
+			android:layout_marginBottom="5dp"
+			android:letterSpacing="0.02"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:padding="5dp"
+			android:orientation="vertical"
+			android:background="@android:color/transparent">
+			<EditText
+				android:id="@+id/verification_pseudoEdit"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:hint="Pseudo"
+				android:inputType="text"
+				android:paddingStart="16dp"
+				android:paddingEnd="16dp"
+				android:layout_marginBottom="5dp"
+				android:background="@drawable/input_background"
+				android:textColor="@color/espresso"
+				android:textColorHint="@color/hint_color"/>
+			
+			<EditText
+				android:id="@+id/verification_codeEdit"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:hint="Saisissez le code"
+				android:inputType="phone"
+				android:paddingStart="16dp"
+				android:paddingEnd="16dp"
+				android:background="@drawable/input_background"
+				android:textColor="@color/espresso"
+				android:textColorHint="@color/hint_color"/>
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

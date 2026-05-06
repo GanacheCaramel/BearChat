@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ffffff" /> <!-- Couleur brun café -->
+            <size android:width="50dp" android:height="50dp" />
+        </shape>
+    </item>
+    
+    <item android:top="15dp" android:bottom="15dp" android:left="15dp" android:right="15dp">
+        <shape android:shape="oval">
+            <solid android:color="?android:attr/windowBackground" />
+        </shape>
+    </item>
+    
+    <item android:top="25dp" android:bottom="25dp" android:left="25dp" android:right="25dp">
+        <shape android:shape="oval">
+            <solid android:color="#ffffff" />
+            <size android:width="70dp" android:height="70dp" />
+        </shape>
+    </item>
+
+</layer-list>

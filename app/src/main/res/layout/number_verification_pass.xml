@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/verification_passLay"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="32dp"
+	android:orientation="vertical"
+	android:visibility="gone">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:padding="5dp"
+			android:orientation="horizontal"
+			android:background="@drawable/input_background">
+			<ImageButton
+				android:id="@+id/verificationBis_eyePass"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/ic_launcher"
+				android:tint="@color/espresso"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:layout_gravity="center|center_horizontal"/>
+			
+			<EditText
+				android:id="@+id/verification_passEdit"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:hint="Entrez le mot de passe"
+				android:inputType="textPassword|text"
+				android:textSize="14sp"
+				android:paddingStart="15dp"
+				android:paddingEnd="16dp"
+				android:textColor="@color/espresso"
+				android:textColorHint="@color/hint_color"
+				android:background="@android:color/transparent"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

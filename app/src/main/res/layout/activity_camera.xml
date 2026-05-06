@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<SurfaceView
+		android:id="@+id/camera_surfaceView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+	
+	<ImageButton
+		android:id="@+id/camera_btnBack"
+		android:layout_width="@dimen/camera_btn_back"
+		android:layout_height="@dimen/camera_btn_back"
+		android:padding="5dp"
+		android:layout_marginStart="@dimen/camera_btn_back_marge"
+		android:layout_marginTop="@dimen/camera_btn_back_marge"
+		android:layout_gravity="top|start"
+		android:src="@drawable/ic_close"
+		style="@style/CafeButton" />
+	
+	<ImageButton
+		android:id="@+id/camera_btnCapture"
+		android:layout_width="@dimen/camera_btn_capture"
+		android:layout_height="@dimen/camera_btn_capture"
+		android:padding="5dp"
+		android:layout_marginBottom="40dp"
+		android:layout_gravity="bottom|center_horizontal"
+		android:src="@drawable/ic_camera"
+		style="@style/CafeButton" />
+</FrameLayout>

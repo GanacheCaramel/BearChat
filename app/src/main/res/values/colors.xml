@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs de base café au lait -->
+    <color name="primary_cafe">#D7CCC8</color>
+    <color name="primary_cafe_dark">#A1887F</color>
+    <color name="primary_cafe_light">#EFEBE9</color>
+    
+    <!-- Pépites de chocolat -->
+    <color name="chocolate_dark">#5D4037</color>
+    <color name="chocolate_medium">#795548</color>
+    <color name="chocolate_light">#8D6E63</color>
+    
+    <!-- Accents dorés comme le caramel -->
+    <color name="accent_caramel">#FFB74D</color>
+    <color name="accent_caramel_dark">#F57C00</color>
+    
+    <!-- Textes -->
+    <color name="text_primary_chocolate">#3E2723</color>
+    <color name="text_secondary_chocolate">#5D4037</color>
+    <color name="text_light">#EFEBE9</color>
+    
+    <!-- Arrière-plans -->
+    <color name="background_creme">#FFF8F2</color>
+    <color name="background_latte">#FAF0E6</color>
+    <color name="surface_cafe">#F5E6D3</color>
+    
+	<!-- Reply background (FFEFDC) -->
+	<color name="reply_sent_cafe">#FFF8F2</color>
+	<color name="reply_received_creme">#F8F8F8</color>
+	
+    <!-- États et interactions -->
+    <color name="ripple_cafe">#40A1887F</color>
+    <color name="divider_chocolate">#1A5D4037</color>
+    
+    <!-- Messages chat -->
+    <color name="message_sent_cafe">#E8D5C4</color>
+    <color name="message_received_creme">#FFFFFF</color>
+    <color name="message_text_sent">#3E2723</color>
+    <color name="message_text_received">#3E2723</color>
+    <color name="message_time_chocolate">#8D6E63</color>
+    
+    <!-- Statuts et indicateurs -->
+    <color name="online_mocha">#A1887F</color>
+    <color name="unread_badge">#FF6D00</color>
+
+    <color name="ltenshi_gradient">#CEB500</color>
+
+    <!-- Thème café et latté -->
+    <color name="cafe_noir">#4B371C</color>
+    <color name="latté">#F7E7CE</color>
+    <color name="cappuccino">#D7B89C</color>
+    <color name="espresso">#3C2A1E</color>
+    <color name="caramel">#B88B5D</color>
+    <color name="crème">#FFF9F0</color>
+    
+    <!-- Couleurs d'interface -->
+    <color name="card_background">#FFF9F0</color>
+    <color name="hint_color">#B0A48B</color>
+    <color name="border_color">#E0D6C2</color>
+
+    <color name="telegram_blue">#4D7BFE</color>
+    <color name="drawer_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#E0E0E0</color>
+</resources>

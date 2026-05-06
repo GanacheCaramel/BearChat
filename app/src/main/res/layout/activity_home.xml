@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent"
+	android:orientation="vertical"
+	android:id="@+id/home">
+	<android.widget.Toolbar
+		android:id="@+id/home_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/background_latte"
+		
+		android:layout_gravity="top">
+		android:elevation="10dp"
+		<include layout="@layout/home_banner"/>
+		<include layout="@layout/banner_selection"/>
+	</android.widget.Toolbar>
+	
+	<include layout="@layout/snack_bar"/>
+	
+	<FrameLayout
+		android:id="@+id/home_main_content"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent">
+		<ListView
+			android:id="@+id/home_conversations_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:choiceMode="multipleChoice"
+			android:divider="?android:attr/colorPrimary"
+			android:dividerHeight="0dp"
+			android:padding="1dp" />
+		
+		<TextView
+			android:id="@+id/home_empty_conversations"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="Aucune conversation\nAppuyez sur + pour démarrer"
+			android:textColor="#888888"
+			android:textSize="18sp"
+			android:visibility="gone" />
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="10dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginBottom="20dp"
+			android:layout_gravity="right|bottom">
+			<ImageButton
+				android:id="@+id/home_camera_btn"
+				android:layout_width="@dimen/home_cam_btn_size"
+				android:layout_height="@dimen/home_cam_btn_size"
+				android:layout_gravity="center"
+				android:padding="5dp"
+				android:elevation="4dp"
+				android:layout_marginBottom="10dp"
+				android:src="@drawable/ic_camera"
+				style="@style/CafeButton"/>
+			
+			<ImageButton
+				android:id="@+id/home_newChat_btn"
+				android:layout_width="@dimen/home_new_btn_size"
+				android:layout_height="@dimen/home_new_btn_size"
+				android:layout_gravity="center"
+				android:padding="5dp"
+				android:elevation="4dp"
+				android:src="@drawable/ic_new_message"
+				style="@style/CafeButton"/>
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

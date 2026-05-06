@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cg.ltenshi.app.social.bearchat" >
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
+
+<!-- Pour sauvegarder les photos -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_logo"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme.LTLight"
+		android:resizeableActivity = "true">
+		<activity
+			android:name=".activities.SplashActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".activities.SplashEndActivity"
+			android:usesCleartextTraffic="true"
+			android:windowSoftInputMode="adjustPan|stateHidden"/>
+		
+		<activity android:name=".activities.LoginActivity"
+			android:usesCleartextTraffic="true"
+			/>
+		
+		<activity android:name=".activities.VerificationActivity"
+			android:usesCleartextTraffic="true"/>
+		
+		<activity android:name=".activities.HomeActivity"
+			android:usesCleartextTraffic="true"/>
+		
+		<activity android:name=".activities.ChatActivity"
+			android:usesCleartextTraffic="true"/>
+		<activity android:name=".activities.CameraActivity"
+			android:usesCleartextTraffic="true"/>
+	</application>
+</manifest>

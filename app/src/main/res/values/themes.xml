@@ -1,0 +1,102 @@
+<resources>
+    <!-- Theme principal de l'application -->
+    <style name="AppTheme.LTLight" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/background_latte</item>
+        <item name="android:windowBackground">@color/background_latte</item>
+        <item name="android:colorBackgroundCacheHint">@color/background_latte</item>
+        
+        <!-- Textes -->
+        <item name="android:textColorPrimary">@color/text_primary_chocolate</item>
+        <item name="android:textColorSecondary">@color/text_secondary_chocolate</item>
+        
+        <!-- Couleurs d'accent -->
+        <item name="android:colorAccent">@color/accent_caramel</item>
+        <item name="android:colorPrimary">@color/primary_cafe_dark</item>
+        <item name="android:colorPrimaryDark">@color/chocolate_dark</item>
+        
+        <!-- Autres éléments -->
+        <item name="android:divider">@color/divider_chocolate</item>
+        <item name="android:selectableItemBackground">@drawable/ripple_cafe</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:popupBackground">@color/divider_chocolate</item>
+    </style>
+
+    <!-- Style pour l'ActionBar -->
+    <style name="ActionBarTheme" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/primary_cafe_dark</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarSubtitle</item>
+    </style>
+
+    <!-- Texte du titre ActionBar -->
+    <style name="ActionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texte du sous-titre ActionBar -->
+    <style name="ActionBarSubtitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/primary_cafe_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style pour les boutons transparents -->
+    <style name="GhostCafeButton" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:tint">@color/chocolate_light</item>
+    </style>
+
+    <!-- Style pour les boutons -->
+    <style name="CafeButton" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/button_cafe</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:tint">@color/background_latte</item>
+    </style>
+
+    <!-- Style pour les boutons -->
+    <style name="SendCafeButton" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/chat_send_button_cafe</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:tint">@color/background_latte</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Style pour les EditText -->
+    <style name="CafeEditText" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edittext_cafe</item>
+        <item name="android:textColor">@color/text_primary_chocolate</item>
+        <item name="android:textColorHint">@color/chocolate_light</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Style pour les Linear -->
+    <style name="CafeLinear" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/linear_cafe</item>
+        <item name="android:textColor">@color/text_primary_chocolate</item>
+        <item name="android:textColorHint">@color/chocolate_light</item>
+    </style>
+
+    <!-- Style pour les cartes/messages -->
+    <style name="MessageCardSent" parent="android:Widget">
+        <item name="android:background">@drawable/bubble_sent</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="MessageCardReceived" parent="android:Widget">
+        <item name="android:background">@drawable/bubble_received</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Style pour la Toolbar personnalisée -->
+    <style name="ToolbarTheme" parent="android:Widget">
+        <item name="android:background">@color/primary_cafe_dark</item>
+        <item name="android:minHeight">?android:attr/actionBarSize</item>
+    </style>
+
+</resources>

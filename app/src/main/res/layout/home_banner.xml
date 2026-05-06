@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/home_banner_"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/transparent">
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="start|center_vertical"
+		android:background="@android:color/transparent">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:layout_marginLeft="2dp"
+			android:textSize="26sp"
+			android:textStyle="bold"
+			android:text="Bear"/>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/accent_caramel"
+			android:textSize="26sp"
+			android:textStyle="bold"
+			android:text="Chat"/>
+	</LinearLayout>
+	
+	<ImageButton
+		android:id="@+id/home_menu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@android:drawable/ic_menu_search"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:scaleType="centerCrop"
+		android:tint="@color/chocolate_dark"
+		android:layout_marginRight="15dp"
+		android:layout_gravity="end|center_vertical"/>
+</FrameLayout>
+
+
+
+<!--	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@android:color/transparent"
+		android:layout_marginLeft="10dp"
+		android:textSize="15sp"
+		android:text="Connecting..."
+		android:textStyle="normal"
+		android:layout_gravity="center|center_horizontal"/> -->

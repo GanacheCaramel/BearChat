@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F5EED9">
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:background="@drawable/background_gradient"/>
+	
+	<!-- Présentation App Logo -->
+	<LinearLayout
+		android:id="@+id/splash_logo_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_gravity="center">
+		
+		<ImageView
+			android:id="@+id/logo"
+			android:layout_width="wrap_content"
+			android:layout_height="150dp"
+			android:src="@drawable/bearground"
+			android:gravity="center"
+			android:visibility="visible"/>
+		
+		<LinearLayout
+			android:id="@+id/splash_logo_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Bear"
+				android:textSize="36sp"
+				android:textColor="@color/cafe_noir"
+				android:textStyle="bold"
+				android:letterSpacing="0.02"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Chat"
+				android:textSize="36sp"
+				android:textColor="@color/accent_caramel"
+				android:textStyle="bold"
+				android:letterSpacing="0.02"/>
+		</LinearLayout>
+		
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="100dp">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/spinner_bg"
+				android:layout_gravity="center|center_horizontal">
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:tint="@color/cafe_noir"
+					android:src="@drawable/ic_launcher"
+					android:layout_marginStart="6dp"
+					android:gravity="center"
+					android:layout_gravity="center|center_horizontal"/>
+				<Spinner
+					android:id="@+id/splashend_spinner_lang"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingTop="5dp"
+					android:paddingBottom="5dp"
+					android:paddingLeft="85dp"
+					android:paddingRight="100dp"
+					android:gravity="center"
+					android:layout_gravity="center|center_horizontal"
+					android:background="@android:color/transparent"/>
+			</LinearLayout>
+		</FrameLayout>
+    </LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/splash_logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal">
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#A86425"/>
+		<Button
+			android:id="@+id/splashend_lunch_btn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="DÉMARRER"
+			android:textSize="25sp"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:letterSpacing="0.02"
+			android:background="@drawable/button_bg"/>
+	</LinearLayout>
+</FrameLayout>

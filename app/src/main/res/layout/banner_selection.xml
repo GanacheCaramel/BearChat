@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/chat_banner_select"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/transparent"
+	android:visibility="visible">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="start|center_vertical"
+		android:background="@android:color/transparent"
+		android:orientation="horizontal">
+		<ImageButton
+			android:id="@+id/selection_btn_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:background="@android:color/transparent"
+			android:src="@drawable/ic_close"
+			android:tint="@color/chocolate_dark" />
+
+		<TextView
+			android:id="@+id/selection_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="0"
+			android:textColor="@color/chocolate_dark"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+	</LinearLayout>
+	
+	<ImageButton
+		android:id="@+id/selection_btn_delete"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end|center_vertical"
+		android:layout_marginRight="15dp"
+		android:background="@android:color/transparent"
+		android:src="@android:drawable/ic_menu_delete"
+		android:tint="@color/chocolate_dark" />
+</FrameLayout>

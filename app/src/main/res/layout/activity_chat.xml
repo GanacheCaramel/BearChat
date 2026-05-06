@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="?android:attr/windowBackground">
+	<android.widget.Toolbar
+		android:id="@+id/chat_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize"
+		android:elevation="4dp"
+		android:textSize="20sp"
+		android:layout_gravity="top"
+		android:padding="2dp"
+		style="@style/ActionBarTheme">
+		
+		<include layout="@layout/banner_chat"/>
+		<include layout="@layout/banner_selection"/>
+	</android.widget.Toolbar>
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@android:color/transparent">
+		
+		<ScrollView
+			android:id="@+id/chat_message_scroll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="top"
+			android:layout_marginBottom="80dp">
+			<LinearLayout
+				android:id="@+id/chat_messages_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:divider="@android:color/black"
+				android:orientation="vertical"/>
+		</ScrollView>
+		
+		<!-- Zone d'envoi de message -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:elevation="8dp"
+			android:layout_gravity="bottom"
+			android:orientation="vertical"
+			android:background="?android:attr/windowBackground">
+			
+			<LinearLayout
+				android:id="@+id/chat_reply_indicator_input"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="8dp"
+				android:elevation="10dp"
+				android:background="@drawable/bubble_sent_reply"
+				android:visibility="gone">
+				<View
+					android:layout_width="8dp"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="3dp"
+					android:background="@drawable/bar_sent_reply_bg"/>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/chat_message_title_reply_input"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="?android:attr/textColorSecondary"
+						android:textSize="16sp" 
+						android:textStyle="bold" 
+						android:text="Reply to"
+						android:layout_marginBottom="8dp"/>
+					<TextView
+						android:id="@+id/chat_message_content_reply_input"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="?android:attr/textColorSecondary"
+						android:textSize="16sp"
+						android:text="Here is the content..."/>
+				</LinearLayout>
+			</LinearLayout>
+			
+			<RelativeLayout
+				android:id="@+id/chat_message_block"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible">
+				<ImageButton
+					android:id="@+id/chat_send_button"
+					android:layout_width="@dimen/btns_edits"
+					android:layout_height="@dimen/btns_edits"
+					android:layout_alignParentRight="true"
+					android:layout_marginLeft="8dp"
+					android:radius="30dp"
+					android:src="@drawable/ic_speaker"
+					style="@style/SendCafeButton"/>
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@+id/chat_send_button"
+					style="@style/CafeLinear">
+					<ImageButton
+						android:id="@+id/chat_attachment_button"
+						android:layout_width="@dimen/btns_edits"
+						android:layout_height="@dimen/btns_edits"
+						android:layout_marginLeft="8dp"
+						android:layout_gravity="end"
+						android:src="@drawable/ic_attachment"
+						style="@style/GhostCafeButton"/>
+					<EditText
+						android:id="@+id/chat_message_input"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="start"
+						android:layout_marginRight="45dp"
+						android:layout_marginLeft="45dp"
+						android:layout_toLeftOf="@id/chat_attachment_button"
+						android:hint="Message..."
+						android:inputType="textMultiLine|textCapSentences|textLongMessage"
+						android:maxLines="4"
+						android:minHeight="48dp"
+						style="@style/CafeEditText"/>
+					<ImageButton
+						android:id="@+id/chat_emoji_button"
+						android:layout_width="@dimen/btns_edits"
+						android:layout_height="@dimen/btns_edits"
+						android:layout_toLeftOf="@id/chat_message_input"
+						android:layout_gravity="start"
+						android:src="@drawable/ic_plus_round"
+						style="@style/GhostCafeButton"/>
+				</FrameLayout>
+			</RelativeLayout>
+
+		</LinearLayout>
+	</FrameLayout>
+	
+</LinearLayout>

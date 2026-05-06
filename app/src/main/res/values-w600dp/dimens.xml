@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="medium_textSize">14dp</dimen>
+	<dimen name="large_textSize">18dp</dimen>
+	<dimen name="small_textSize">8dp</dimen>
+	
+	<dimen name="list_iconSize">5dp</dimen>
+	<dimen name="logo_squareSize">50dp</dimen>
+	
+	<dimen name="chat_btn_size">50dp</dimen>
+	<dimen name="chat_edittext_size">48dp</dimen>
+	
+	<dimen name="chat_edittext_minh">48dp</dimen>
+	
+	<dimen name="home_cam_btn_size">50dp</dimen>
+	<dimen name="home_new_btn_size">60dp</dimen>
+	
+	<dimen name="btns_edits">48dp</dimen>
+</resources>

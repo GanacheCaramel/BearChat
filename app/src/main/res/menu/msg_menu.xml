@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/msg_menu_op1"
+		android:title="@string/msg_clickOp1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:titleCondensed="@string/msg_clickOp1"
+		android:showAsAction="ifRoom"
+		android:actionLayout="@layout/drop_item_action_layout"/>
+	<item
+		android:id="@+id/msg_menu_op2"
+		android:title="@string/msg_clickOp2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:titleCondensed="@string/msg_clickOp2"
+		android:showAsAction="ifRoom"
+		android:actionLayout="@layout/drop_item_action_layout"/>
+	<item
+		android:id="@+id/msg_menu_op3"
+		android:title="@string/msg_clickOp3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:titleCondensed="@string/msg_clickOp3"
+		android:showAsAction="ifRoom"
+		android:actionLayout="@layout/drop_item_action_layout"/>
+</menu>

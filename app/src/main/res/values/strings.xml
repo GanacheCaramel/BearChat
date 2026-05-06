@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Bear Chat</string>
+	
+	<string name="splash_slog">Bear everyWhere !!</string>
+	<string name="connexion_slog">Connexion à votre compte</string>
+	<string name="create_acc_slog">Creation d\'un compte</string>
+	
+	<string name="button_next">NEXT</string>
+	<string name="button_lunch">START</string>
+	
+	<string name="app_slogan">Let\'s Bear close even more than ever !!</string>
+
+	<string name="number_message1">We will send a message to this number to check, make sure it\'s alright</string>
+	<string name="number_message2">We had send a message to your number phone, it you did not get it, please</string>
+	<string name="code_message">Un message a été envoyé au numéro </string>
+	<string name="pass_message1">If you do not remember about your password, please</string>
+
+	<string name="msg_clickOp1">Copier</string>
+	<string name="msg_clickOp2">Éffacer</string>
+	<string name="msg_clickOp3">Épingler</string>
+	<string name="msg_clickOp4">Delete</string>
+	
+	<string name="home_selectOp2">Épinlger</string>
+	<string name="home_selectOp3">Télécharger</string>
+	
+	<string-array name="theme_entries">
+		<item>Sombre</item>
+		<item>Clair</item>
+		<item>Système</item>
+	</string-array>
+	
+	<string-array name="font_size_entries">
+		<item>Petit</item>
+		<item>Moyen</item>
+		<item>Grand</item>
+		<item>Xtra Grand</item>
+	</string-array>
+</resources>
