@@ -21,4 +21,4 @@ une sécurité plus pratique, des animations, une UI sous le thème "ours" 🐻 
 3. Exécuter sur émulateur API 21+
 
 ### Contact
-Email: bassotadashi@gmail.com
+Email: ganacheaucaramel@gmail.com
